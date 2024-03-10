@@ -1,0 +1,146 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background: url(./backgrounds-6.jpg) center;
+}
+h1 {
+  color: wheat;
+}
+#joueur {
+  text-align: center;
+  margin: 50px;
+}
+#joueurOrange {
+  color: rgb(84, 84, 231);
+}
+#joueurBlue {
+  color: rgb(231, 138, 84);
+}
+.valeur {
+  display: flex;
+  justify-content: center;
+  margin: 50px;
+}
+.joueurBlueWin {
+  background: rgb(84, 84, 231);
+  color: rgb(231, 138, 84);
+}
+.joueurOrangeWin {
+  background: rgb(231, 138, 84);
+  color: rgb(84, 84, 231);
+}
+.case {
+  border: 1px solid black;
+  width: 100px;
+  height: 100px;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  font-size: 3rem;
+  color: blueviolet;
+  cursor: pointer;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+.container .morpion {
+  display: grid;
+  grid-template-areas: "case1 case2 case3" "case4 case5 case6" "case7 case8 case9";
+}
+.case{
+  background: wheat;
+}
+.case0 {
+  grid-area: case1;
+  width: 100px;
+  height: 100px;
+}
+
+.case1 {
+  grid-area: case2;
+  width: 100px;
+  height: 100px;
+}
+
+.case2 {
+  grid-area: case3;
+  width: 100px;
+  height: 100px;
+}
+
+.case3 {
+  grid-area: case4;
+  width: 100px;
+  height: 100px;
+}
+
+.case4 {
+  grid-area: case5;
+  width: 100px;
+  height: 100px;
+}
+
+.case5 {
+  grid-area: case6;
+  width: 100px;
+  height: 100px;
+}
+
+.case6 {
+  grid-area: case7;
+  width: 100px;
+  height: 100px;
+}
+
+.case7 {
+  grid-area: case8;
+  width: 100px;
+  height: 100px;
+}
+
+.case8 {
+  grid-area: case9;
+  width: 100px;
+  height: 100px;
+} /*# sourceMappingURL=morpion.css.map */
+#rejouer, #reset{
+  padding: 10px 20px;
+  border: none;
+  border-radius: 100px;
+  background: brown;
+  color: whitesmoke;
+  transition: transform 0.2s;
+  display: none;
+}
+#rejouer:hover{
+  cursor: pointer;
+  transform: scale(1.05);
+}
+.erreurContainer {
+  text-align: center;
+}
+.erreurContainer #erreur {
+  display: none;
+  background: rgb(158, 70, 70);
+  padding: 10px;
+  border-radius: 10px;
+  color: whitesmoke;
+}
+.erreurContainer #info {
+  display: none;
+  background: rgb(70, 158, 82);
+  padding: 10px;
+  border-radius: 10px;
+  color: whitesmoke;
+}
+
+#playerX, #playerO{
+  color: whitesmoke;
+  margin: 100px;
+  font-size: 2rem;
+}
